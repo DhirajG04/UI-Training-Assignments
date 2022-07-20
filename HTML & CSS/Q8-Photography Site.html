@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="Q8.css">
+</head>
+
+<body>
+	<h1>Welcome to Edgeline EduTech Courses</h1>
+
+
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src="https://dev.java/assets/images/java-logo-vert-blk.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+            <img src="https://cdn.suzukimotorcycle.co.in/public-live/uploads/media-images/original/Gixxer-SF-Mira-Red-150-Website-Home-Page-Desktop-2547x1420-new-min_5f759dfde64f8.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<!-- <div class="image-container">
+			<img id="img-Box" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154408/DSwithCPPWorkshopthumbnail.png"
+				alt="click here">
+		</div> -->
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
